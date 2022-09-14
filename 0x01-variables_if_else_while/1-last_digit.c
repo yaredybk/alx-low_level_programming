@@ -5,17 +5,19 @@
 /**
  * main - prints a random number with positive, negative or zero next to it
  * Return: always returns 0
-*/
+ */
 int main(void)
 {
 int n;
+int y;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
+y = n % 10;
 if (n > 0)
-printf("%d is positive\n", n);
+printf("Last digit of %d is %d and is 0\n", n, y);
 else if (n < 0)
-printf("%d is negative\n", n);
+printf("Last digit of %d is %d and is greater than 5\n", n, y);
 else
-printf("%d is zero\n", n);
+printf("Last digit of %d is %d and is less than 6 and not 0\n", n, y);
 return (0);
 }
