@@ -1,6 +1,3 @@
-/**
- *description - 'this is the main description'
- */
 #include <stdio.h>
 /**
  * main - this is the main function
