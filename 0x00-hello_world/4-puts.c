@@ -1,9 +1,6 @@
-/**
- *description - 'this is the main description'
- */
 #include <stdio.h>
 /**
- * main - this is the main function
+ * main - prints "programming is like a multilingual puzzel"
  *
  * Return: always 0
  */
