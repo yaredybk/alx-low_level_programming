@@ -28,19 +28,16 @@ int main(void)
 			{
 				for (; jj <= 57; jj++)
 				{
-					if ((i > 48) | (j > 49))
+					if ((ii != 48) | (jj != 49))
 					{
-						if ((ii != 48) | (jj != 49))
-						{
-							putchar(44);
-							putchar(32);
-						}
+						putchar(44);
+						putchar(32);
+					}
 						putchar(i);
 						putchar(j);
 						putchar(32);
 						putchar(ii);
 						putchar(jj);
-					}
 				}
 			}
 		}
