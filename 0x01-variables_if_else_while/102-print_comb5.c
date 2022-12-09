@@ -1,36 +1,50 @@
 #include <stdio.h>
 /**
- * main - print alphabets
-  * Return: always 0
-  */
+ * main - prints number combinations
+ * Return: always 0
+ */
 int main(void)
 {
-int i, j, k, l;
-for (i = 48; i <= 57; i++)
-{
-for (j = 48; j <= 57; j++)
-{
-for (k = i; k <= 57; k++)
-{
-for (l = j + 1; l <= 57; l++)
-{
-putchar (i);
-putchar (j);
-putchar (32);
-putchar (k);
-putchar (l);
-if (i == 57 && j == 56)
-{
-putchar ('\n');
-}
-else
-{
-putchar (44);
-putchar (32);
-}
-}
-}
-}
-}
+	int i;
+	int j;
+	int ii;
+	int jj;
+
+	for (i = 48; i <= 56; i++)
+	{
+		for (j = 48; j <= 57; j++)
+		{
+			if (j == 57)
+			{
+				ii = i + 1;
+				jj = 48;
+			}
+			else
+			{
+				ii = i;
+				jj = j + 1;
+			}
+			for (ii; ii <= 57; ii++)
+			{
+				for (jj; jj <= 57; jj++)
+				{
+					if ((i > 48) | (j > 49))
+					{
+						if ((ii != 48) | (jj != 49))
+						{
+							putchar(44);
+							putchar(32);
+						}
+						putchar(i);
+						putchar(j);
+						putchar(32);
+						putchar(ii);
+						putchar(jj);
+					}
+				}
+			}
+		}
+	}
+	putchar('\n');
 return (0);
 }
