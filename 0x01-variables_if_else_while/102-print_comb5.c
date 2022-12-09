@@ -39,6 +39,7 @@ int main(void)
 					putchar(ii);
 					putchar(jj);
 				}
+				jj = 48;
 			}
 		}
 	}
