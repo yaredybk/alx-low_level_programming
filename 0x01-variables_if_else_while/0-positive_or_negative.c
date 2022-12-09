@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
 /**
  * main - prints a random number with positive, negative or zero next to it
  * Return: always returns 0
