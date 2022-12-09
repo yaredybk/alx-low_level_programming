@@ -33,11 +33,11 @@ int main(void)
 						putchar(44);
 						putchar(32);
 					}
-						putchar(i);
-						putchar(j);
-						putchar(32);
-						putchar(ii);
-						putchar(jj);
+					putchar(i);
+					putchar(j);
+					putchar(32);
+					putchar(ii);
+					putchar(jj);
 				}
 			}
 		}
