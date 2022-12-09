@@ -24,9 +24,9 @@ int main(void)
 				ii = i;
 				jj = j + 1;
 			}
-			for (ii; ii <= 57; ii++)
+			for (; ii <= 57; ii++)
 			{
-				for (jj; jj <= 57; jj++)
+				for (; jj <= 57; jj++)
 				{
 					if ((i > 48) | (j > 49))
 					{
