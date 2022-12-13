@@ -1,11 +1,11 @@
 #include"main.h"
-/*
- * main: prints "_putchar"
+/**
+ * main - prints "_putchar"
  *
- * Returns: always 0
+ * Return: always 0
  */
 int main(void)
 {
 	putchar();
-	return(0);
+	return (0);
 }
