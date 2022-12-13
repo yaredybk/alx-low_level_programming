@@ -1,9 +1,9 @@
 #include<stdio.h>
 
+void print_alphabet(void);
+int print_putchar(void);
 #ifndef mainHeader
 #define mainHeader
-int print_putchar(void);
-void print_alphabet(void);
 /*
  * putchar: prints "_putchar"
  *
