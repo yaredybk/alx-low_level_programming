@@ -2,7 +2,7 @@
 
 #ifndef mainHeader
 #define mainHeader
-int print_putchar(void);
+int print_putchar2(void);
 void print_alphabet(void);
 
 #endif
@@ -11,7 +11,7 @@ void print_alphabet(void);
  *
  * Returns: always 0
  */
-inline int print_putchar(void)
+inline int print_putchar2(void)
 {
 	printf("_putchar\n");
 	return (0);
