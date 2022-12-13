@@ -12,7 +12,7 @@ int print_putchar(void)
 }
 
 /**
- * main - print alphabets
+ * print_alphabet - print alphabets
  * Return: always void
  */
 void print_alphabet(void)
