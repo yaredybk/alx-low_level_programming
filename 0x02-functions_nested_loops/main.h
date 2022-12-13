@@ -2,16 +2,6 @@
 
 #ifndef mainHeader
 #define mainHeader
-/*
- * putchar: prints "_putchar"
- *
- * Returns: always 0
- */
-inline int print_putchar(void)
-{
-	printf("_putchar\n");
-	return (0);
-}
 
 /**
  * print_alphabet - print alphabets
@@ -25,6 +15,4 @@ putchar(i);
 putchar('\n');
 }
 
-void print_alphabet(void);
-int print_putchar(void);
 #endif
