@@ -1,5 +1,8 @@
 #include<stdio.h>
 
+#ifndef mainHeader
+#define mainHeader
+
 /*
  * putchar: prints "_putchar"
  *
@@ -22,3 +25,4 @@ for (i = 'a'; i <= 'z'; i++)
 putchar(i);
 putchar('\n');
 }
+#endif
