@@ -6,24 +6,3 @@ int print_putchar2(void);
 void print_alphabet(void);
 
 #endif
-/*
- * putchar: prints "_putchar"
- *
- * Returns: always 0
- */
-inline int print_putchar2(void)
-{
-	printf("_putchar\n");
-	return (0);
-}
-/**
- * print_alphabet - print alphabets
- * Return: always void
- */
-inline void print_alphabet(void)
-{
-char i;
-for (i = 'a'; i <= 'z'; i++)
-putchar(i);
-putchar('\n');
-}
