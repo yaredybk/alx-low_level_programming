@@ -8,7 +8,7 @@
 int _isalpha(int c)
 {
 	int i = isalpha(c);
-	
+
 	if (i)
 		return (1);
 	else
