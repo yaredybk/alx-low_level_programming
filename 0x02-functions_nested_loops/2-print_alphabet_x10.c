@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_alphabet_10x - print alphabets a - z
+ * print_alphabet_x10 - print alphabets a - z
  * Return: always 0
  */
-void print_alphabet_10x(void)
+void print_alphabet_x10(void)
 {
 	char i;
 	int j;
