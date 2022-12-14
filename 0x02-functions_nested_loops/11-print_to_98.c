@@ -6,19 +6,16 @@
  */
 void print_to_98(int n)
 {
-	int k;
-
-	k = n;
 	do {
-		_putchar(k + '0');
-		if (k != 98)
+		printf('%d',n);
+		if (n != 98)
 		{
-			_putchar(',');
-			_putchar(' ');
+			printf(',');
+			printf(' ');
 		}
-		if (k > 98)
+		if (n > 98)
 			n--;
-		else if (k < 98)
+		else if (n < 98)
 			n--;
-	} while (k != 98);
+	} while (n != 98);
 }
