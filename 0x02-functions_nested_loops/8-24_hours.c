@@ -11,7 +11,7 @@ void jack_baur(void)
 	int m;
 	int mm;
 
-	for (h = 0; i <= 2; h++)
+	for (h = 0; h <= 2; h++)
 		for (hh = 0; hh <= 9; hh++)
 		{
 			if (h == 2 && hh > 3)
