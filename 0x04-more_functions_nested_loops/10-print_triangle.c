@@ -1,10 +1,10 @@
 #include"main.h"
 
 /**
- * print_square - prints a square, followed by a new line.
+ * print_triangle - prints a square, followed by a new line.
  * @size: input number
  */
-void print_square(int size)
+void print_triangle(int size)
 {
 	int i;
 	int j;
