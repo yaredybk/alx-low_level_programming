@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m 'c debugging tasks #ALX'
+git commit -m 'more_functions_nested_loops tasks #ALX'
 git push
