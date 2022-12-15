@@ -20,8 +20,7 @@ void print_times_table(int n)
 			int k;
 		       k = i * j;
 
-			_putchar(',');
-			_putchar(' ');
+		       printf(", ");
 			if (k < 10)
 			{
 				_putchar(' ');
