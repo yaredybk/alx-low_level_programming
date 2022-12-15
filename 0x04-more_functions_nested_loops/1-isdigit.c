@@ -1,12 +1,12 @@
 #include"main.h"
 
 /**
- * _isupper - checks for a digit (0 through 9)
+ * _isdigit - checks for a digit (0 through 9)
  * @c: input character to checked
  * Return: 1 if c is a digit
  * 0 otherwise
  */
-int _isupper(int c)
+int _isdigit(int c)
 {
 	return (isdigit(c));
 }
