@@ -4,13 +4,12 @@
  * print_square - prints a square, followed by a new line.
  * @size: input number
  */
-void print_square(int n)
+void print_square(int size)
 {
 	int i;
-	int j;
 
-	if (n > 0)
-		for (i = 0; i < n; i++)
+	if (size > 0)
+		for (i = 0; i < size; i++)
 		{
 			_putchar('#');
 			_putchar('\n');
