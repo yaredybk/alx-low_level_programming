@@ -1,8 +1,9 @@
 #include<stdio.h>
 /**
  * main - computes and prints the sum of all the multiples of 3 or 5 below 1024
+ * Return: always 0
  */
-void main(void)
+int main(void)
 {
 	int n;
 	int net = 0;
@@ -15,4 +16,5 @@ void main(void)
 			net += n;
 	}
 	printf("%d\n", net);
+	return (0);
 }
