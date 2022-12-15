@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m 'hot fix'
+git commit -m 'c debugging tasks #ALX'
 git push
