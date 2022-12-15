@@ -37,9 +37,7 @@ void print_times_table(int n)
 			}
 			else
 			{
-				_putchar(' ');
-				_putchar((k / 10) + '0');
-				_putchar((k % 10) + '0');
+				printf(" %d", k);
 			}
 		}
 		_putchar('\n');
