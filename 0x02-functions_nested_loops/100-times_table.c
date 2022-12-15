@@ -23,22 +23,18 @@ void print_times_table(int n)
 		       printf(", ");
 			if (k < 10)
 			{
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(k + '0');
+				printf("  %d", k);
 			}
 			else if (k < 100)
 			{
-				_putchar(' ');
-				_putchar((k / 10) + '0');
-				_putchar((k % 10) + '0');
+				printf(" %d", k);
 			}
 			else
 			{
 				printf("%d", k);
 			}
 		}
-		_putchar('\n');
+		printf("\n");
 	}
 	}
 }
