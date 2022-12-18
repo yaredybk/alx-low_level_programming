@@ -16,8 +16,6 @@ int main(void)
 	j = 2;
 	net = 0;
 
-	printf("1, 2");
-
 	while (1)
 	{
 		int tempsum;
