@@ -19,7 +19,7 @@ int main(void)
 
 	while (counter <= 98)
 	{
-		long sum;
+		unsigned long sum;
 
 		sum = i + j;
 		i = j;
