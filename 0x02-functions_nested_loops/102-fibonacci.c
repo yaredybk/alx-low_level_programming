@@ -8,8 +8,8 @@
 int main(void)
 {
 	int counter;
-	int i;
-	int j;
+	long i;
+	long j;
 
 	counter = 3;
 	i = 1;
@@ -17,14 +17,15 @@ int main(void)
 
 	printf("1, 2");
 
-	while (counter++ <= 50)
+	while (counter <= 50)
 	{
-		int sum;
+		long sum;
 
 		sum = i + j;
 		i = j;
 		j = sum;
-		printf(", %d", j);
+		printf(", %ld", j);
+		counter++;
 	}
 	printf("\n");
 	return (0);
