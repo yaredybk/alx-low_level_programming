@@ -17,7 +17,7 @@ int main(void)
 
 	printf("1, 2");
 
-	while(counter++ <= 50)
+	while (counter++ <= 50)
 	{
 		int sum;
 
