@@ -11,12 +11,15 @@ void rev_string(char *s)
 	int k;
 
 	i = strlen(s);
-	j = s;
 	k = i - 1;
+	j = s;
 
 	while (i > 0)
 	{
 		i--;
-		s[k - i] = j[i];
+		printf("i:%d,k-i:%d,org:%c\n",i,k-i,s[i]);
+		j[k - i] = s[i];
+		printf("j:%s,s:%s", j , s);
 	}
+	s = j;
 }
