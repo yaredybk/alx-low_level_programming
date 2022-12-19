@@ -7,19 +7,17 @@
 void rev_string(char *s)
 {
 	int i;
-	char *j;
+	char j;
 	int k;
 
-	i = strlen(s);
-	k = i - 1;
-	j = s;
-
-	while (i > 0)
+	k = 0;
+	i = strlen(s) - 1;
+	while (i >= k)
 	{
+		j = s[i];
+		s[i] = s[k];
+		s[k] = j;
+		k++;
 		i--;
-		printf("i:%d,k-i:%d,org:%c\n",i,k-i,s[i]);
-		j[k - i] = s[i];
-		printf("j:%s,s:%s", j , s);
 	}
-	s = j;
 }
