@@ -5,7 +5,7 @@
  * tarting with the first character, followed by a new line.
  * @str: input string
  */
-void puts2(char *str)i
+void puts2(char *str)
 {
 	int i;
 	int j;
