@@ -5,9 +5,9 @@
  * @str: input string
  * Return: capitalized string
  */
-char *string_toupper(char * str)
+char *string_toupper(char *str)
 {
-	char * i;
+	char *i;
 	int j;
 
 	j = 0;
