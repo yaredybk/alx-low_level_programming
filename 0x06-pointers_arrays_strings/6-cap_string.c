@@ -31,6 +31,8 @@ char *cap_string(char *str)
 			a = 1;
 		else if (i[j] == '(' || i[j] == ')' || i[j] == '{')
 			a = 1;
+		else if (i[j] == '.')
+			a = 1;
 		if (a && i[j + 1] != '\0')
 		{
 			if (isalpha(i[j + 1]) && islower(i[j + 1]))
