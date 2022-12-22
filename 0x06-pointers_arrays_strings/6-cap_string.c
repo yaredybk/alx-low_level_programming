@@ -18,22 +18,22 @@ char *cap_string(char *str)
 		int a;
 
 		a = 0;
-		if (i[j] == ' ' || i[j] == '\t' || j == 0)
+		if (!j)
+			if (isalpha(i[j]) && islower(i[j]))
+				i[j] = toupper(i[j]);
+		else if (i[j] == ' ' || i[j] == '\t' || i[j] == '\n')
 			a = 1;
-		if (i[j] == '\n' || i[j] == ',' || i[j] == ';')
+		else if (i[j] == '}' || i[j] == ',' || i[j] == ';')
 			a = 1;
-		if (i[j] == '!' || i[j] == '?' || i[j] == '"')
+		else if (i[j] == '!' || i[j] == '?' || i[j] == '"')
 			a = 1;
-		if (i[j] == '(' || i[j] == ')' || i[j] == '{' || i[j] == '}')
+		else if (i[j] == '(' || i[j] == ')' || i[j] == '{')
 			a = 1;
 		if (a && i[j + 1] != '\0')
 		{
 			if (isalpha(i[j + 1]) && islower(i[j + 1]))
 				i[j + 1] = toupper(i[j + 1]);
 		}
-		else if (!j)
-			if (isalpha(i[j]) && islower(i[j]))
-				i[j] = toupper(i[j]);
 		j++;
 	}
 	return (str);
