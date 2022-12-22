@@ -30,7 +30,6 @@ char *leet(char *str)
 			if (str[i] == test[j])
 			{
 				str[i] = rep[j];
-				break;
 			}
 			j++;
 		}
