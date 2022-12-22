@@ -16,8 +16,8 @@ char *leet(char *str)
 	char *rep;
 	int i;
 
-	test = {"aAeEoOtTlL"};
-	rep = {"4433007711"};
+	test = "aAeEoOtTlL";
+	rep = "4433007711";
 	i = 0;
 
 	while (str[i] != '\0')
@@ -30,6 +30,7 @@ char *leet(char *str)
 			if (str[i] == test[j])
 			{
 				str[i] = rep[j];
+				break;
 			}
 			j++;
 		}
