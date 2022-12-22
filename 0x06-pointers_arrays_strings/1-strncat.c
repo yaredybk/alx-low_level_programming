@@ -7,6 +7,7 @@
  * and then adds a terminating null byte
  * @dest: first character used as destnation
  * @src: second character used as source
+ * @n: input number to to determine how much bytes to take from src
  * Return:  a pointer to the resulting string dest
  */
 char *_strncat(char *dest, char *src, int n)
