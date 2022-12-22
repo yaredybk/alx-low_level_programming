@@ -18,9 +18,11 @@ char *cap_string(char *str)
 		int a;
 
 		a = 0;
-		if (!j)
+		if (j == 0)
+		{
 			if (isalpha(i[j]) && islower(i[j]))
 				i[j] = toupper(i[j]);
+		}
 		else if (i[j] == ' ' || i[j] == '\t' || i[j] == '\n')
 			a = 1;
 		else if (i[j] == '}' || i[j] == ',' || i[j] == ';')
