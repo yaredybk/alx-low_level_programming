@@ -1,5 +1,4 @@
 #include"main.h"
-
 /**
  * cap_string - capitalizes all words of a string
  * @str: input string
@@ -7,25 +6,32 @@
  */
 char *cap_string(char *str)
 {
+
 	char *i;
 	int j;
-	char *check;
 
 	j = 0;
 	i = str;
-	check = " \t\n,;.!?\"(){}";
 
 	while (i[j] != '\0')
 	{
 		int a;
-		int b;
 
 		a = 0;
-		b = 0;
-		while (++b <= 13 && !a)
-			if (i[j] == check[b - 1])
-				a = 1;
-		if (a == 1)
+		if (i[j] == ' ' || i[j] == '\t' || j == 0)
+			a = 1;
+		if (i[j] == '\n' || i[j] == ',' || i[j] == ';')
+			a = 1;
+		if (i[j] == '!' || i[j] == '?' || i[j] == '"')
+			a = 1;
+		if (i[j] == '(' || i[j] == ')' || i[j] == '{' || i[j] == '}')
+			a = 1;
+		if (a && i[j + 1] != '\0')
+		{
+			if (isalpha(i[j + 1]) && islower(i[j + 1]))
+				i[j + 1] = toupper(i[j + 1]);
+		}
+		else if (!j)
 			if (isalpha(i[j]) && islower(i[j]))
 				i[j] = toupper(i[j]);
 		j++;
