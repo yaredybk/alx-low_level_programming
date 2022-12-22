@@ -22,8 +22,8 @@ char *cap_string(char *str)
 
 		a = 0;
 		b = 0;
-		while (++b <= 13)
-			if (i[j] == check[b])
+		while (++b <= 13 && !a)
+			if (i[j] == check[b - 1])
 				a = 1;
 		if (a == 1)
 			if (isalpha(i[j]) && islower(i[j]))
