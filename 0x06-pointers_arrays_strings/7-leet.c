@@ -12,20 +12,16 @@
  */
 char *leet(char *str)
 {
-	char *test;
-	char *rep;
-	int i;
-
-	test = "aAeEoOtTlL";
-	rep = "4433007711";
-	i = 0;
+	char test[] = "aAeEoOtTlL";
+	char rep[] = "4433007711";
+	int i = 0;
 
 	while (str[i] != '\0')
 	{
 		int j;
 
 		j = 0;
-		while (j != '\0')
+		while (test[j] != '\0')
 		{
 			if (str[i] == test[j])
 			{
