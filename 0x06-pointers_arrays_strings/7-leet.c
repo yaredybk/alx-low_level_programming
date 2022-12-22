@@ -17,7 +17,7 @@ char *leet(char *str)
 	int i;
 
 	test = {"aAeEoOtTlL"};
-	rep = {"4433007711};
+	rep = {"4433007711"};
 	i = 0;
 
 	while (str[i] != '\0')
