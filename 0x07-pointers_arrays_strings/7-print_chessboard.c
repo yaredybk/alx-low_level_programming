@@ -3,9 +3,8 @@
 /**
  * print_chessboard - prints the chessboard.
  * @board: input board double array
- * @a: length of array
  */
-void print_chessboard(char board(*a)[8])
+void print_chessboard(char board[8][8])
 {
 	int i;
 
@@ -19,3 +18,4 @@ void print_chessboard(char board(*a)[8])
 		}
 		_putchar('\n');
 	}
+}
