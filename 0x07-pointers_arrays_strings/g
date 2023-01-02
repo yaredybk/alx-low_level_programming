@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m 'uploading empty file'
+git commit -m 'uploading new file'
 git push
