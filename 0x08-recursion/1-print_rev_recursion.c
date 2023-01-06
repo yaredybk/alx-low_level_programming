@@ -21,3 +21,4 @@ void _print_rev_recursion(char *s)
 		i--;
 	}
 	_puts_recursion(s);
+}
