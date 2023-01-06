@@ -8,7 +8,7 @@
  * Return:  the natural square root of a number
  * -1 If n does not have a natural square root
  */
-int _sqrt_recursion(int )
+int _sqrt_recursion(int n)
 {
 	return (sqrt(n));
 }
