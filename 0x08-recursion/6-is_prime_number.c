@@ -17,8 +17,10 @@ int prime2(int a, int b)
 	return (prime2(a, b + 1));
 }
 /**
- * is_prime_number - returns 1 if the input integer is a prime number, otherwise return 0
+ * is_prime_number - chech prime numbers
  * @n: input number
+ * Return: 1 if the input integer is a prime number,
+ * otherwise return 0
  */
 int is_prime_number(int n)
 {
