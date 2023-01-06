@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<string.h>
+#include<math.h>
 
 #ifndef MAIN_H
 #define MAIN_h
