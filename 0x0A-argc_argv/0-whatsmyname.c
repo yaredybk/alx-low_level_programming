@@ -4,8 +4,10 @@
  * main - prints its name, followed by a new line.
  * @argc: Number of command line arguments
  * @argv: Array name
+ * Return: always 0
  */
-void main (int argc, int *argv[])
+int main(int argc, char *argv[])
 {
-	printf("%s\n",argv[argc * 0]);
+	printf("%s\n", argv[argc * 0]);
+	return (0);
 }
