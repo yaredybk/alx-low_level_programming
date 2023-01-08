@@ -2,6 +2,7 @@
 #include<string.h>
 #include<math.h>
 #include<ctype.h>
+#include<stdlib.h>
 
 #ifndef MAIN_H
 #define MAIN_H
