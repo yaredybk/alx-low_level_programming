@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
 {
 	int *myarr;
 	int temp[2];
+
 	myarr = &temp[0];
 
 	if (argc != 2)
@@ -58,6 +59,7 @@ int main(int argc, char *argv[])
 int *changeit(int change, int remaining, int coins)
 {
 	static int r[2];
+
 	if (remaining >= coins)
 	{
 		change += remaining / coins;
@@ -65,5 +67,5 @@ int *changeit(int change, int remaining, int coins)
 	}
 	r[0] = change;
 	r[1] = remaining;
-	return r;
+	return (r);
 }
