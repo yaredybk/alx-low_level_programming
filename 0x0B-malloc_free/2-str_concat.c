@@ -30,7 +30,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	else
 	{
-		tmp = (char *)(strdup(strcat(s1, s2)));
+		tmp = strdup(strcat(s1, s2)));
 		if (tmp)
 			return (tmp);
 		else
