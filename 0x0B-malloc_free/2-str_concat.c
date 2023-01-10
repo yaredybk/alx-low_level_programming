@@ -18,9 +18,19 @@ char *str_concat(char *s1, char *s2)
 		tmp = strdup("");
 		return (tmp);
 	}
+	else if (s1 == NULL)
+	{
+		tmp = strdup(s2);
+		return (tmp);
+	}
+	else if (s2 == NULL)
+	{
+		tmp = strdup(s1);
+		return (tmp);
+	}
 	else
 	{
-		tmp = strdup(strcat(s1, s2));
+		tmp = (char *)(strdup(strcat(s1, s2)));
 		if (tmp)
 			return (tmp);
 		else
