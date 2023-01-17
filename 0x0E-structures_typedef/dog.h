@@ -4,7 +4,7 @@
 
 #ifndef MAIN_H
 #define MAIN_H
-struct dog
+struct my_dog
 {
 	char *name;
 	float age;
