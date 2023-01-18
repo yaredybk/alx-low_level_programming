@@ -1,4 +1,3 @@
-0x0C-more_malloc_free
 
 #ifndef MAIN_H
 #define MAIN_H
