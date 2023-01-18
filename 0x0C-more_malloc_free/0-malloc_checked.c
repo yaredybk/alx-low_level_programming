@@ -2,7 +2,8 @@
 
 /**
  * malloc_checked - allocate memory an checks.
- *@b: bits to allocate
+ * @b: bits to allocate
+ * Return: void
 */
 void *malloc_checked(unsigned int b)
 {
