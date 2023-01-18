@@ -1,7 +1,7 @@
 #include"main.h"
 
 /**
- * _memset - this function set memory
+ * _memset - allocates memory for an array, using malloc
  * @s: s is a buffer that it contains in array
  * @b: the new value to set in the buffer
  * @n: the number of bytes to be altered.
