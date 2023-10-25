@@ -1,9 +1,5 @@
 #include"main.h"
 
-/**
- * function that returns 1 if the input integer is a prime number, otherwise return 0.
- */
-
  /**
  * prime2 - Makes possible to evaluate from 1 to n
  * @a: same number as n
