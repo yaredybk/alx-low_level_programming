@@ -8,10 +8,10 @@
  */
 int main(int argc, char *argv[])
 {
-	if(argc <0)
+	if (argc < 0)
 	{
-		return printf("invalid no of arguments");
+		return (printf("invalid no of arguments"));
 	}
 	printf("%s\n", argv[0]);
-	return 0;
+	return (0);
 }
