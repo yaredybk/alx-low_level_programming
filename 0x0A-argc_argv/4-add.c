@@ -18,10 +18,10 @@ int main(int argc, char *argv[])
 		return (printf("0\n"));
 	for (; ind < argc; ind++)
 	{
-
-		if (argv[ind] == '0')
-			continue;
 		int val = 0;
+
+		if (*argv[ind] == '0')
+			continue;
 		val = atoi(argv[ind]);
 		if (val == 0)
 		{
