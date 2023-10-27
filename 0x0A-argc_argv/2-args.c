@@ -2,9 +2,11 @@
 
 /**
  * main - prints the name of the function
+ * @argc: number of arguments passed
+ * @argv: an array of pointers of arguments
  * Return : 0
  */
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int i=0;
 
@@ -12,4 +14,5 @@ void main(int argc, char *argv[])
 	{
 		printf("%s\n", argv[i]);
 	}
+	return (0);
 }
