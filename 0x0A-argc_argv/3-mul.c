@@ -2,13 +2,21 @@
 
 /**
  * main - multiplies two numbers
- * Return : the multplication of two numbers
+ * @argc: number of arguments passed
+ * @argv: an array of pointers of arguments
+ * Return: the multplication of two numbers
  */
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
-	int i=argv[1];
-	int j=argv[2];
-	int m=i*j;
+	int i = 0;
+	int j = 0;
 
-	printf("%d\n", m);
+	if (argc < 3)
+		return (printf("fewer arguments provided\n"));
+
+	i = atoi(argv[1]);
+	j = atoi(argv[2]);
+
+	printf("%d\n", i * j);
+	return (0);
 }
