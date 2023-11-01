@@ -17,32 +17,45 @@ char *argstostr(int ac, char **av)
 
 	len = 0;
 	pos = 0;
-
 	if (ac == 0 || av == NULL)
-		retun (NULL);
-
-	for (i = 0; i < ac; i++)
-	{
-		int j;
-
-		j = 0;
-
-		while (av[i][j])
-		{
-			len ++;
-		}
-		len ++;
-	}
-	p = (char *)(sizeof(char) * len);
-	if (p ==NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
 		int j;
 
 		j = 0;
+		while (av[i][j])
+			len++;
+		len++;
+	}
+	p = (char *)(sizeof(char) * len);
+	if (p == NULL)
+		return (NULL);
+	store(ac, av, p);
+	return (p);
+}
 
-		while(ac[i][j])
+
+/**
+ * store - stores arguments in av to p
+ * @ac: argument count
+ * @av: array of arguments
+ * @p: pointer to store chars
+ * Return: 0
+ */
+int store(int ac, char **av, char *p)
+{
+	int i;
+	int pos;
+
+	pos = 0;
+	i = 0;
+	for (i = 0; i < ac; i++)
+	{
+		int j;
+
+		j = 0;
+		while (ac[i][j])
 		{
 			p[pos] = ac[i][j];
 			j++;
@@ -51,5 +64,5 @@ char *argstostr(int ac, char **av)
 		p[pos] = "\n";
 		pos++;
 	}
-	return (p);
+	return (0);
 }
