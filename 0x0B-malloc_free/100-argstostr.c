@@ -15,7 +15,6 @@ char *argstostr(int ac, char **av)
 	char *p;
 
 	len = 0;
-	pos = 0;
 	if (ac == 0 || av == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
@@ -54,13 +53,13 @@ int store(int ac, char **av, char *p)
 		int j;
 
 		j = 0;
-		while (ac[i][j])
+		while (av[i][j])
 		{
-			p[pos] = ac[i][j];
+			p[pos] = av[i][j];
 			j++;
 			pos++;
 		}
-		p[pos] = "\n";
+		p[pos] = '\n';
 		pos++;
 	}
 	return (0);
