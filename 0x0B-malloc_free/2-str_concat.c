@@ -2,8 +2,8 @@
 
 /**
  * str_concat - function that concatenates two strings.
- * @s1 - firist string
- * @s2 - second string
+ * @s1: first string
+ * @s2: second string
  * Return: pointer to a newly allocated space in memory.
  * which contains the contents of s1, followed by the contents of s2,
  * and null terminated
@@ -25,7 +25,7 @@ char *str_concat(char *s1, char *s2)
 		;
 	for (n2 = 0; s2[n2] != '\0'; n2++)
 		;
-	strnew = (char *)malloc((n1 + n2 + 1) *sizeof(char));
+	strnew = (char *)malloc((n1 + n2 + 1) * sizeof(char));
 	if (strnew == NULL)
 		return (NULL);
 	for (i = 0; s1[i] != '\0'; i++)
