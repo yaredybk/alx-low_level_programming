@@ -1,4 +1,6 @@
 #!/bin/bash
 git add .
-git commit -m 'test'
+echo "type commit message!\n"
+read commitm
+git commit -m $commitm
 git push
