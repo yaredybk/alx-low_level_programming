@@ -36,7 +36,8 @@ listint_t *reverse_listint(listint_t **head);
 int check_ptr(const listint_t *ptr, listint_t **array, unsigned int size);
 size_t free_listint_safe(listint_t **h);
 
-
+listint_t **_ra(listint_t **list, size_t size, listint_t *new);
+listint_t *find_listint_loop(listint_t *head);
 
 
 #endif /*LISTS_H*/
